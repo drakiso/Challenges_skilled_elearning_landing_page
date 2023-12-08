@@ -1,0 +1,11 @@
+{
+  "name": "challenges_skilled_elearning_landing_page",
+  "version": "1.0.0",
+  "description": "Challenge frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/style.css"
+  },
+  "author": "DrAKIso",
+  "license": "ISC"
+}

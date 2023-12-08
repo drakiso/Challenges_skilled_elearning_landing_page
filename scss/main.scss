@@ -1,0 +1,107 @@
+@import "./componants/variables",
+        "./componants/mixins";
+
+@import "./vendors/node_modules/bootstrap/scss/functions",
+        "./vendors/node_modules/bootstrap/scss/variables",
+        "./vendors/node_modules/bootstrap/scss/variables-dark";
+
+@import "./componants/map-amends";
+
+@import "./vendors/node_modules/bootstrap/scss/maps",
+        "./vendors/node_modules/bootstrap/scss/mixins",
+        "./vendors/node_modules/bootstrap/scss/root",
+        "./vendors/node_modules/bootstrap/scss/utilities",
+        "./vendors/node_modules/bootstrap/scss/reboot",
+        "./vendors/node_modules/bootstrap/scss/type",
+        "./vendors/node_modules/bootstrap/scss/images",
+        "./vendors/node_modules/bootstrap/scss/containers",
+        "./vendors/node_modules/bootstrap/scss/grid",
+        "./vendors/node_modules/bootstrap/scss/helpers",
+        "./vendors/node_modules/bootstrap/scss/button-group",
+        "./vendors/node_modules/bootstrap/scss/buttons",
+        "./vendors/node_modules/bootstrap/scss/nav",
+        "./vendors/node_modules/bootstrap/scss/navbar",
+        "./vendors/node_modules/bootstrap/scss/utilities/api";
+
+@import "./bases/reset";
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.h1-fs {
+    font-size: 2.2rem;
+}
+
+.h2-fs {
+    font-size: 1.5rem;
+}
+
+header .btn:hover {
+    background-color: #666CA3
+}
+
+.banner_height .btn:hover {
+    opacity: .5
+}
+
+footer .btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, 
+    rgba(255, 255, 255, 0.50) 100%), 
+    linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.hover {
+    color: black;
+}
+
+// breakpoints customize
+
+@media screen and (min-width: 768px) {
+    .banner_height {
+        height: 450px;
+    }   
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner_height {
+        height: 600px;
+    }   
+
+    .container {
+        max-width: 960px;
+    }
+
+    .h1-fs {
+        font-size: 3.3rem;
+    }
+
+    .h2-fs {
+        font-size: 2rem;
+    }
+}
+
+.bg-gradient-1 {
+    @include customize-bg(nth($gradient-1, 1), nth($gradient-1, 2))
+}
+
+.bg-gradient-2 {
+    @include customize-bg(nth($gradient-2, 1), nth($gradient-2, 2))
+}
+
+.bg-gradient-3 {
+    @include customize-bg(nth($gradient-3, 1), nth($gradient-3, 2))
+}

@@ -1,0 +1,18 @@
+//Create my own map to have more option on position
+$custom-position: (
+    "8": 8%,
+    "17": 17%,
+    "30": 30%,
+    "35": 35%,
+);
+
+//Create my own map to have more option on spacing
+$custom-spacers: (
+    6: $spacer * 4.7,
+    7: $spacer * 4.7,
+    175: $spacer * 2,
+);
+
+//Merge the maps
+$position-values: map-merge($position-values, $custom-position);
+$spacers: map-merge($spacers, $custom-spacers);
