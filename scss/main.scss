@@ -41,7 +41,7 @@ body {
     }
 
     &-heading {
-        width: 457px;
+        width: 460px;
 
         @media screen and (max-width: 1279.9px) {
             max-width: 398px;
@@ -53,7 +53,7 @@ body {
     }
 
     p {
-        margin: 29px 0 40px ;
+        margin: 29px 15px 40px 0;
 
         @media screen and (max-width: 1279.9px) {
             margin: 24px 0;

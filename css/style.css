@@ -217,7 +217,7 @@ body {
   }
 }
 .hero-heading {
-  width: 457px;
+  width: 460px;
 }
 @media screen and (max-width: 1279.9px) {
   .hero-heading {
@@ -230,7 +230,7 @@ body {
   }
 }
 .hero p {
-  margin: 29px 0 40px;
+  margin: 29px 15px 40px 0;
 }
 @media screen and (max-width: 1279.9px) {
   .hero p {
