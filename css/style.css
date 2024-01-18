@@ -78,6 +78,7 @@ h3 {
   border-radius: 50px;
   background-color: #13183F;
   color: #FFFFFF;
+  font-weight: 700;
 }
 @media screen and (max-width: 1279.9px) {
   .CTA {
@@ -310,15 +311,25 @@ body {
     padding: 56px 21px 32px 32px;
   }
 }
+.services-feature h3 {
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 1279.9px) {
+  .services-feature h3 {
+    margin-bottom: 16px;
+  }
+}
 .services-feature div {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .services-feature a {
   color: #F74780;
   text-decoration: none;
+  justify-self: flex-end;
+  margin-top: auto;
+  font-weight: 700;
 }
 .services-feature a:hover {
   opacity: 0.7;
