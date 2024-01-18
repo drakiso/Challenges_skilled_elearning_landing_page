@@ -29,7 +29,6 @@ body {
 /* Style of the banner */
 .hero {
     @include content_center;
-    display: flex;
     margin-top: 172px;
     margin-bottom: 250px;
 
