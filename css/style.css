@@ -95,6 +95,7 @@ header div {
   justify-content: space-between;
   align-items: center;
   padding: 32px 0;
+  padding: 24px 0 0;
 }
 @media screen and (max-width: 1279.9px) {
   header div {
@@ -111,6 +112,14 @@ header div {
     padding: 36px 0;
   }
   header div img {
+    width: 89px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  header {
+    padding: 16px 0 0 0;
+  }
+  header img {
     width: 89px;
   }
 }
@@ -185,7 +194,7 @@ body {
   max-width: 1110px;
   margin: auto;
   display: flex;
-  padding: 140px 0 250px;
+  padding: 172px 0 250px;
 }
 @media screen and (max-width: 1279.9px) {
   .hero {
@@ -199,12 +208,12 @@ body {
 }
 @media screen and (max-width: 1279.9px) {
   .hero {
-    padding: 63px 0 210px;
+    padding: 99px 0 210px;
   }
 }
 @media screen and (max-width: 767.9px) {
   .hero {
-    padding: 2px 0 413px;
+    padding: 38px 0 413px;
   }
 }
 .hero-heading {
