@@ -24,6 +24,16 @@ table {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  color: #83869A;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1279.9px) {
+  body {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 h1 {
@@ -60,19 +70,6 @@ h3 {
 @media screen and (max-width: 1279.9px) {
   h3 {
     font-size: 20px;
-  }
-}
-
-p {
-  color: #83869A;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-}
-@media screen and (max-width: 1279.9px) {
-  p {
-    font-size: 16px;
-    line-height: 26px;
   }
 }
 
@@ -194,7 +191,8 @@ body {
   max-width: 1110px;
   margin: auto;
   display: flex;
-  padding: 172px 0 250px;
+  margin-top: 172px;
+  margin-bottom: 250px;
 }
 @media screen and (max-width: 1279.9px) {
   .hero {
@@ -208,16 +206,18 @@ body {
 }
 @media screen and (max-width: 1279.9px) {
   .hero {
-    padding: 99px 0 210px;
+    margin-top: 99px;
+    margin-bottom: 210px;
   }
 }
 @media screen and (max-width: 767.9px) {
   .hero {
-    padding: 38px 0 413px;
+    margin-top: 38px;
+    margin-bottom: 413px;
   }
 }
 .hero-heading {
-  width: 460px;
+  width: 457px;
 }
 @media screen and (max-width: 1279.9px) {
   .hero-heading {
@@ -230,7 +230,7 @@ body {
   }
 }
 .hero p {
-  margin: 29px 15px 40px 0;
+  margin: 29px 12px 40px 0;
 }
 @media screen and (max-width: 1279.9px) {
   .hero p {

@@ -1,5 +1,15 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
+
+    color: $primary;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+
+    @media screen and (max-width: 1279.9px) {
+        font-size: 16px;  
+        line-height: 26px;
+    }
 }
 
 h1 {
@@ -33,17 +43,5 @@ h3 {
 
     @media screen and (max-width: 1279.9px) {
         font-size: 20px;  
-    }
-}
-
-p {
-    color: $primary;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
-
-    @media screen and (max-width: 1279.9px) {
-        font-size: 16px;  
-        line-height: 26px;
     }
 }

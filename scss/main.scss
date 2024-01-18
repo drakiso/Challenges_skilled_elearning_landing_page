@@ -30,18 +30,21 @@ body {
 .hero {
     @include content_center;
     display: flex;
-    padding: 172px 0 250px;
+    margin-top: 172px;
+    margin-bottom: 250px;
 
     @media screen and (max-width: 1279.9px) {
-        padding: 99px 0 210px;
+        margin-top: 99px;
+        margin-bottom: 210px;
     }
 
     @media screen and (max-width: 767.9px) {
-        padding: 38px 0 413px;
+        margin-top: 38px;
+        margin-bottom: 413px;
     }
 
     &-heading {
-        width: 460px;
+        width: 457px;
 
         @media screen and (max-width: 1279.9px) {
             max-width: 398px;
@@ -53,7 +56,7 @@ body {
     }
 
     p {
-        margin: 29px 15px 40px 0;
+        margin: 29px 12px 40px 0;
 
         @media screen and (max-width: 1279.9px) {
             margin: 24px 0;
