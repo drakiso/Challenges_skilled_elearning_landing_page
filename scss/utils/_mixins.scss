@@ -1,0 +1,27 @@
+@mixin header_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+
+    @media screen and (max-width: 1279.9px) {
+        padding: 36px 0;
+
+        img {
+            width: 89px;
+        }
+    }
+}
+
+@mixin content_center {
+    max-width: 1110px;
+    margin: auto;
+
+    @media screen and (max-width: 1279.9px) {
+        max-width: 689px;
+    }
+
+    @media screen and (max-width: 767.9px) {
+        max-width: 343px;
+    }
+}

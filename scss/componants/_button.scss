@@ -1,0 +1,10 @@
+.CTA {
+    padding: 14px 31px 14px 32px;
+    border-radius: 50px;
+    background-color: $bg-primary;
+    color: $white;
+    
+    @media screen and (max-width: 1279.90px) {
+        padding: 9px 24px 11px;
+    }
+}

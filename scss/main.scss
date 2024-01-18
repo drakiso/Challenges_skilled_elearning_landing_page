@@ -1,107 +1,146 @@
-@import "./componants/variables",
-        "./componants/mixins";
+@import "./utils/variables",
+        "./utils/mixins";
 
-@import "./vendors/node_modules/bootstrap/scss/functions",
-        "./vendors/node_modules/bootstrap/scss/variables",
-        "./vendors/node_modules/bootstrap/scss/variables-dark";
+@import "./bases/reset",
+        "./bases/base",
+        "./bases/typography";
 
-@import "./componants/map-amends";
+@import "./componants/button";
 
-@import "./vendors/node_modules/bootstrap/scss/maps",
-        "./vendors/node_modules/bootstrap/scss/mixins",
-        "./vendors/node_modules/bootstrap/scss/root",
-        "./vendors/node_modules/bootstrap/scss/utilities",
-        "./vendors/node_modules/bootstrap/scss/reboot",
-        "./vendors/node_modules/bootstrap/scss/type",
-        "./vendors/node_modules/bootstrap/scss/images",
-        "./vendors/node_modules/bootstrap/scss/containers",
-        "./vendors/node_modules/bootstrap/scss/grid",
-        "./vendors/node_modules/bootstrap/scss/helpers",
-        "./vendors/node_modules/bootstrap/scss/button-group",
-        "./vendors/node_modules/bootstrap/scss/buttons",
-        "./vendors/node_modules/bootstrap/scss/nav",
-        "./vendors/node_modules/bootstrap/scss/navbar",
-        "./vendors/node_modules/bootstrap/scss/utilities/api";
-
-@import "./bases/reset";
-
+@import "./layouts/header", 
+        "./layouts/footer";
+    
+/* Style background of the page */
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
+    background:url("../assets/images/image-hero-desktop.webp") scroll no-repeat 
+    top -146.13px right -335.63px, linear-gradient(180deg, #FFF 40%, #F0F1FF 100%);
 
-h1 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
+    @media screen and (max-width: 1279.9px) {
+        background:url("../assets/images/image-hero-tablet.webp") scroll no-repeat 
+        top -92.13px right -297.71px, linear-gradient(180deg, #FFF 30%, #F0F1FF 100%);
+    }
 
-h2, h3 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-
-.h1-fs {
-    font-size: 2.2rem;
-}
-
-.h2-fs {
-    font-size: 1.5rem;
-}
-
-header .btn:hover {
-    background-color: #666CA3
-}
-
-.banner_height .btn:hover {
-    opacity: .5
-}
-
-footer .btn:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, 
-    rgba(255, 255, 255, 0.50) 100%), 
-    linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-}
-
-.hover {
-    color: black;
-}
-
-// breakpoints customize
-
-@media screen and (min-width: 768px) {
-    .banner_height {
-        height: 450px;
-    }   
-
-    .container {
-        max-width: 720px;
+    @media screen and (max-width: 767.9px) {
+        background:url("../assets/images/image-hero-mobile.webp") scroll no-repeat 
+        top 433px center, linear-gradient(180deg, #FFF 20%, #F0F1FF 100%);
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .banner_height {
-        height: 600px;
-    }   
+/* Style of the banner */
+.hero {
+    @include content_center;
+    display: flex;
+    padding: 140px 0 250px;
 
-    .container {
-        max-width: 960px;
+    @media screen and (max-width: 1279.9px) {
+        padding: 63px 0 210px;
     }
 
-    .h1-fs {
-        font-size: 3.3rem;
+    @media screen and (max-width: 767.9px) {
+        padding: 2px 0 413px;
     }
 
-    .h2-fs {
-        font-size: 2rem;
+    &-heading {
+        width: 457px;
+
+        @media screen and (max-width: 1279.9px) {
+            max-width: 398px;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            max-width: 343px;
+        }
+    }
+
+    p {
+        margin: 29px 12px 40px 0;
+
+        @media screen and (max-width: 1279.9px) {
+            margin: 24px 0;
+        }
+    }
+
+    .CTA {
+        padding-top: 19px;
+        padding-bottom: 16px;
+        background: linear-gradient(180deg, nth($bg-primary-gradient, 1) 0%, 
+        nth($bg-primary-gradient, 2) 100%);
+
+        @media screen and (max-width: 1279.9px) {
+            padding: 15px 37px 15px 37px;
+        }
+    }
+
+    .CTA:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%),
+        linear-gradient(180deg, nth($bg-primary-gradient, 1) 0%, nth($bg-primary-gradient, 2) 100%);
     }
 }
 
-.bg-gradient-1 {
-    @include customize-bg(nth($gradient-1, 1), nth($gradient-1, 2))
-}
+/* style of the services presentation section */
+.services {
+    @include content_center;
+    display: grid;
+    grid-template: repeat(2, 322px) / repeat(3, 350px);
+    row-gap: 80px;
+    column-gap: 30px;
 
-.bg-gradient-2 {
-    @include customize-bg(nth($gradient-2, 1), nth($gradient-2, 2))
-}
+    @media screen and (max-width: 1279.9px) {
+        grid-template: repeat(3, 259px) / repeat(2, 339px);
+        row-gap: 56px;
+        column-gap: 11px;
+    }
 
-.bg-gradient-3 {
-    @include customize-bg(nth($gradient-3, 1), nth($gradient-3, 2))
+    @media screen and (max-width: 767.9px) {
+        grid-template: 120px repeat(5, 259px) / repeat(1, 343px);
+        row-gap: 40px;
+    }
+
+    h2 {
+        background: linear-gradient(180deg, nth($bg-primary-gradient, 1) 0%, 
+        nth($bg-primary-gradient, 2) 100%);
+        border-radius: 15px;
+        padding: 64px 32px 138px;
+
+        @media screen and (max-width: 1279.9px) {
+            padding: 56px 21px 139px 32px;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            padding: 24px 29px 32px 28px;
+        }
+    }
+
+    &-feature {
+        background-color: $white;
+        border-radius: 15px;
+        padding: 64px 32px 40px;
+        position: relative;
+
+        @media screen and (max-width: 1279.9px) {
+            padding: 56px 21px 32px 32px;
+        }
+
+        div {
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        a {
+            color: $emphasize;
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: .7;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: -24px;
+    }
+    
 }

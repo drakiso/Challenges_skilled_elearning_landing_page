@@ -10,9 +10,6 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -26,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Alt text](./skilled_elearning_landing_page.png?raw=true "Skilled landing page screenshot")
+![Alt text](./Screenshot_skilled.png?raw=true "Skilled landing page screenshot")
 
 ### Links
 
@@ -42,18 +39,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow: Bootstrap
-
-### What I learned
-
-This projet was for me an opportunity to practice bootstrap. It's was basically challenging but I did it Houra !!
-
-### Continued development
-
-I'll probably continue to practice bootstrap in another project and learn to customise it easily.
-
-### Useful resources
-
-- [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - It help me for all the project.
 
 ## Author
 

@@ -1,0 +1,10 @@
+header {
+    div {
+        @include content_center;
+        @include header_footer
+    }
+
+    .CTA:hover {
+        background-color: $bg-primary-hover;
+    }
+}
