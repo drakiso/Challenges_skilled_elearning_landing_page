@@ -3,7 +3,12 @@ footer {
     background-color: $bg-primary;
     div {
         @include content_center;
-        @include header_footer
+        @include header_footer;
+        padding: 32px 0;
+
+        @media screen and (max-width: 1279.9px) {
+            padding: 36px 0;
+        }
     }
 
     .CTA {

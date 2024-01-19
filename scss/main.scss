@@ -58,7 +58,11 @@ body {
         margin: 29px 18px 40px 0;
 
         @media screen and (max-width: 1279.9px) {
-            margin: 24px 0;
+            margin: 25px 0;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            margin: 26px 0 24px;
         }
     }
 

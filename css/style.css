@@ -92,9 +92,8 @@ header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
   color: #FFFFFF;
-  padding: 24px 0 0;
+  padding: 24px 0 0 0;
 }
 @media screen and (max-width: 1279.9px) {
   header div {
@@ -107,9 +106,6 @@ header div {
   }
 }
 @media screen and (max-width: 1279.9px) {
-  header div {
-    padding: 36px 0;
-  }
   header div img {
     width: 89px;
   }
@@ -136,8 +132,8 @@ footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
   color: #FFFFFF;
+  padding: 32px 0;
 }
 @media screen and (max-width: 1279.9px) {
   footer div {
@@ -150,11 +146,13 @@ footer div {
   }
 }
 @media screen and (max-width: 1279.9px) {
-  footer div {
-    padding: 36px 0;
-  }
   footer div img {
     width: 89px;
+  }
+}
+@media screen and (max-width: 1279.9px) {
+  footer div {
+    padding: 36px 0;
   }
 }
 footer .CTA {
@@ -236,7 +234,12 @@ body {
 }
 @media screen and (max-width: 1279.9px) {
   .hero p {
-    margin: 24px 0;
+    margin: 25px 0;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .hero p {
+    margin: 26px 0 24px;
   }
 }
 .hero .CTA {

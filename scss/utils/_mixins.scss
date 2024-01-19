@@ -2,12 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 0;
     color: $white;
 
     @media screen and (max-width: 1279.9px) {
-        padding: 36px 0;
-
         img {
             width: 89px;
         }
